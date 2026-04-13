@@ -1,0 +1,11 @@
+﻿namespace Backend_TrabajoFinal.Models
+{
+    public class Cliente
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = "";
+        public string Email { get; set; } = "";
+
+        public ICollection<Transaccion> Transacciones { get; set; } = new List<Transaccion>();
+    }
+}
